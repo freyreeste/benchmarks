@@ -223,7 +223,11 @@ project(':benchmarks-all') {
     shadowJar {
         archiveFileName = 'benchmarks.jar'
         manifest.attributes('Main-Class': 'org.openjdk.jmh.Main')
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
         mergeServiceFiles()
+        filesMatching('META-INF/services/**') {
+            duplicatesStrategy = DuplicatesStrategy.INCLUDE
+        }
     }
 
     jar.finalizedBy shadowJar
