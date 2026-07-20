@@ -28,6 +28,7 @@ versions = "0.61.0"
 
 [libraries]
 agrona = { group = "org.agrona", name = "agrona", version.ref = "agrona" }
+aeron-agent = { group = "io.aeron", name = "aeron-agent", version.ref = "aeron" }
 aeron-cluster = { group = "io.aeron", name = "aeron-cluster", version.ref = "aeron" }
 aeron-samples = { group = "io.aeron", name = "aeron-samples", version.ref = "aeron" }
 checker = { group= "org.checkerframework" , name="checker-qual", version.ref = "checker" }
