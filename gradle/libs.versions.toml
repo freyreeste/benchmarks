@@ -24,7 +24,7 @@ scala = "2.13.14"
 shadow = "9.6.1"
 slf4j = "2.0.18"
 tomcat = "6.0.53"
-versions = "0.54.0"
+versions = "0.61.0"
 
 [libraries]
 agrona = { group = "org.agrona", name = "agrona", version.ref = "agrona" }
@@ -60,5 +60,4 @@ scala-reflect = { group= "org.scala-lang" , name="scala-reflect", version.ref = 
 [plugins]
 protobuf = { id = "com.google.protobuf", version.ref = "protobufPlugin" }
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
-versions = { id = "com.github.ben-manes.versions", version.ref = "versions" }
-
+versions = { id = "io.github.ben-manes.versions", version.ref = "versions" }
